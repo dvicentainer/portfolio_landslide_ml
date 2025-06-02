@@ -94,6 +94,11 @@ landslide_ml/
 │   ├── roc_curves.png                     # Curvas ROC
 │   └── feature_importance_random_forest.png  # Importância das features
 ├── landslide_susceptibility_model_training.ipynb  # Notebook principal
+├── run_analysis.py              # Script executável
+├── setup_environment.bat       # Setup Windows
+├── setup_environment.sh        # Setup Linux/Mac
+├── requirements.txt            # Dependências Python
+├── INSTRUCTIONS.md             # Guia de execução
 └── README.md                   # Este arquivo
 ```
 
@@ -188,11 +193,6 @@ jupyter notebook landslide_susceptibility_model_training.ipynb
 ![Importância das Features](images/feature_importance_random_forest.png)
 
 *Ranking das variáveis mais importantes para predição de deslizamentos, destacando declividade e elevação como fatores principais.*
-
-#### Matriz de Confusão do Melhor Modelo
-![Matriz de Confusão](images/confusion_matrix_best_model.png)
-
-*Matriz de confusão do modelo com melhor performance, mostrando alta precisão na classificação.*
 
 ### 🗺️ Mapa de Susceptibilidade
 ![Mapa de Resultado](images/result_susceptibility_map.jpg)
