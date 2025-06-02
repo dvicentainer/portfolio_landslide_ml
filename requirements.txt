@@ -1,31 +1,76 @@
-# Análise de Susceptibilidade a Deslizamentos de Terra
+# ========================================
+# ANÁLISE DE SUSCEPTIBILIDADE A DESLIZAMENTOS DE TERRA
 # Autor: Denis Vicentainer
 # Email: denisvicentainer@gmail.com
+# LinkedIn: https://www.linkedin.com/in/denis-augusto-vicentainer-726832138/
+# ========================================
 
-# Manipulação de dados
+# ===== MANIPULAÇÃO DE DADOS =====
 pandas>=1.5.0
 numpy>=1.21.0
 
-# Dados geoespaciais
+# ===== DADOS GEOESPACIAIS =====
 rasterio>=1.3.0
-geopandas>=0.12.0
+# geopandas>=0.12.0  # Opcional - descomente se necessário
 
-# Visualização
+# ===== VISUALIZAÇÃO =====
 matplotlib>=3.5.0
 seaborn>=0.11.0
 
-# Machine Learning
+# ===== MACHINE LEARNING =====
 scikit-learn>=1.1.0
 
-# Estatística
+# ===== ESTATÍSTICA =====
 statsmodels>=0.13.0
+scipy>=1.9.0
 
-# Jupyter
+# ===== JUPYTER NOTEBOOK =====
 jupyter>=1.0.0
 ipykernel>=6.0.0
+notebook>=6.4.0
 
-# Dependências opcionais para melhor performance
-# Descomente se necessário:
-# tensorflow>=2.10.0  # Para redes neurais avançadas
-# xgboost>=1.6.0      # Para gradient boosting
-# lightgbm>=3.3.0     # Para gradient boosting alternativo
+# ===== DEPENDÊNCIAS DE SISTEMA =====
+# Para melhor compatibilidade
+setuptools>=65.0.0
+wheel>=0.37.0
+
+# ===== DEPENDÊNCIAS OPCIONAIS =====
+# Descomente conforme necessário:
+
+# Para análises avançadas:
+# plotly>=5.0.0              # Gráficos interativos
+# folium>=0.12.0             # Mapas interativos
+
+# Para machine learning avançado:
+# xgboost>=1.6.0             # Gradient boosting
+# lightgbm>=3.3.0            # Gradient boosting alternativo
+# tensorflow>=2.10.0         # Deep learning
+# torch>=1.12.0              # PyTorch
+
+# Para processamento paralelo:
+# joblib>=1.1.0              # Paralelização
+# dask>=2022.8.0             # Computação distribuída
+
+# Para dados geoespaciais avançados:
+# fiona>=1.8.0               # I/O de dados vetoriais
+# shapely>=1.8.0             # Geometrias
+# pyproj>=3.3.0              # Projeções cartográficas
+
+# ===== NOTAS DE INSTALAÇÃO =====
+#
+# 1. INSTALAÇÃO BÁSICA (recomendada):
+#    pip install -r requirements.txt
+#
+# 2. SE RASTERIO FALHAR:
+#    - Windows: pip install rasterio --no-binary rasterio
+#    - Linux: sudo apt install gdal-bin libgdal-dev
+#    - macOS: brew install gdal
+#
+# 3. ALTERNATIVA COM CONDA (mais estável):
+#    conda create -n landslide python=3.9
+#    conda activate landslide
+#    conda install -c conda-forge rasterio pandas numpy scikit-learn matplotlib seaborn statsmodels jupyter
+#
+# 4. PARA DESENVOLVIMENTO:
+#    pip install -r requirements.txt
+#    pip install pytest black flake8  # Ferramentas de desenvolvimento
