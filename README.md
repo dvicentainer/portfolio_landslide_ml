@@ -2,7 +2,7 @@
 
 ## 📋 Visão Geral
 
-Este projeto implementa um modelo de machine learning para análise de susceptibilidade a deslizamentos de terra utilizando dados geoespaciais. O estudo aplica a metodologia **SEMMA** (Sample, Explore, Modify, Model, Assess) para desenvolver modelos preditivos robustos baseados em fatores condicionantes do terreno.
+Este projeto é uma parte do meu TCC no MBA em Data Science e Analytics e implementa um modelo de machine learning para análise de susceptibilidade a deslizamentos de terra utilizando dados geoespaciais. O estudo aplica a metodologia **SEMMA** (Sample, Explore, Modify, Model, Assess) para desenvolver modelos preditivos robustos baseados em fatores condicionantes do terreno.
 
 ## 🎯 Objetivos
 
@@ -94,11 +94,6 @@ landslide_ml/
 │   ├── roc_curves.png                     # Curvas ROC
 │   └── feature_importance_random_forest.png  # Importância das features
 ├── landslide_susceptibility_model_training.ipynb  # Notebook principal
-├── run_analysis.py              # Script executável
-├── setup_environment.bat       # Setup Windows
-├── setup_environment.sh        # Setup Linux/Mac
-├── requirements.txt            # Dependências Python
-├── INSTRUCTIONS.md             # Guia de execução
 └── README.md                   # Este arquivo
 ```
 
